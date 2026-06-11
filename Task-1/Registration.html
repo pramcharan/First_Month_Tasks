@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h2>Welcome to the Student Portal Registration Page</h2>
+    </header>
+    <main>
+        <section>
+            <h2>Student Registration Form:</h2>
+            <form>
+                <label>Full Name:</label><br>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required minlength="2" maxlength="100"><br><br>
+                <label>Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                <label>Mobile Number:</label><br>
+                <input type="tel" id="mobile" name="mobile" placeholder="XXXXXXXXXX" required><br><br>
+                <label>Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="********" minlength="8" required><br><br>
+                <label>Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="********" minlength="8" required><br><br>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label> <br><br>
+                <label>Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>IT Spaxious Innovation - Student Portal</p>
+    </footer>
+</body>
+</html>
