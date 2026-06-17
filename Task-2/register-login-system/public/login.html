@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-text">
+            <h2>Welcome Back</h2>
+            <p>Login to continue your journey</p>
+        </div>
+        <div class="input-group">
+            <input type="email" id="loginEmail" placeholder="Email">
+        </div>
+        <div class="input-group">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button type="button" class="toggle-password" id="toggle-loginPassword" onclick="togglePasswordVisibility('loginPassword')">Show</button>
+        </div>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <button class="primary-btn" onclick="loginUser()">Login</button>
+        <div class="bottom-link">
+            Don't have an account? <a href="register.html">Sign Up</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function togglePasswordVisibility(id){
+            const input = document.getElementById(id);
+            const btn = document.getElementById('toggle-' + id);
+            if(input.type === 'password'){
+                input.type = 'text';
+                btn.textContent = 'Hide';
+            }else{
+                input.type = 'password';
+                btn.textContent = 'Show';
+            }
+        }
+    </script>
+</body>
+</html>
